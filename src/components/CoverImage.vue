@@ -12,11 +12,10 @@ export default {
 };
 </script>
 
-<style scoped>
-.image {
-  width: 100vw;
-  height: 50vh;
-  background-position: center;
-  background-size: cover;
-}
+<style lang="sass" scoped>
+.image
+  width: 100vw
+  height: 50vh
+  background-position: center
+  background-size: cover
 </style>
