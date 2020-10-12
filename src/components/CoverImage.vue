@@ -14,7 +14,7 @@ export default {
 
 <style lang="sass" scoped>
 .image
-  width: 100vw
+  width: 100%
   height: 50vh
   background-position: center
   background-size: cover
