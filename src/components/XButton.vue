@@ -1,6 +1,6 @@
 <template lang="pug">
   .button-wrapper
-    button(:class="'button--'+mode")
+    button(:class="'button--'+mode" @click="click(to)")
       .icon
         unicon(:name="icon")
       .text {{ label }}
@@ -12,7 +12,17 @@ export default {
   props: {
     icon: String,
     label: String,
-    mode: String
+    mode: String,
+    to: String
+  },
+
+  methods: {
+    click(to) {
+      this.$emit("click");
+      if (to) {
+        this.$router.push(to);
+      }
+    }
   }
 };
 </script>
