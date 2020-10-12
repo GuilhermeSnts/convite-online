@@ -1,6 +1,6 @@
 <template lang="pug">
   .map-button
-    XButton Local 
+    XButton(icon="map-marker" iconColor="#C3C1D6" label="Lugar" mode="smooth" to="/map")
 </template>
 
 <script>
@@ -15,4 +15,7 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="sass" scoped>
+.map-button
+  margin: 20px
+</style>
