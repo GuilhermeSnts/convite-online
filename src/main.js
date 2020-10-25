@@ -3,7 +3,7 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import "./plugins/unicons.js";
-import "./plugins/maps.js";
+import "leaflet/dist/leaflet.css";
 
 Vue.config.productionTip = false;
 
