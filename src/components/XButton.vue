@@ -13,6 +13,7 @@ export default {
     icon: String,
     label: String,
     mode: String,
+    dark: Boolean,
     to: String
   },
 
@@ -70,4 +71,18 @@ export default {
         transform: translateY(-7px)
         .icon
           fill: white !important
+    &.button--outline
+      color: #333333
+      background-color: #fff
+      border-radius: 25px
+      border: 1px solid #333333
+      transition: all 0.3s ease 0s
+      .icon
+        fill: #333333
+      &:hover
+        border: 1px solid #900020
+        background-image: none
+        color: #900020
+        .icon
+          fill: #900020 !important
 </style>
