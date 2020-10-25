@@ -1,6 +1,6 @@
 <template lang="pug">
   .map-page
-    h1 map
+    XHeader(title="Map")
     l-map(
       :zoom="zoom"
       :center="marker"
@@ -17,6 +17,7 @@
 import { latLng, icon } from "leaflet";
 import { LMap, LTileLayer, LIcon, LMarker } from "vue2-leaflet";
 import markerIcon from "../assets/pin-location.gif";
+import XHeader from "../components/XHeader";
 import { mapGetters } from "vuex";
 export default {
   name: "Map",
@@ -51,7 +52,8 @@ export default {
     LMap,
     LMarker,
     LTileLayer,
-    LIcon
+    LIcon,
+    XHeader
   }
 };
 </script>
@@ -59,6 +61,6 @@ export default {
 <style lang="sass" scoped>
 .map-page
   .map-block
-      width: 100%
-      height: calc(100vh - 80px)
+    width: 100%
+    height: calc(100vh - 80px)
 </style>
