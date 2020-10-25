@@ -1,7 +1,7 @@
 <template lang="pug">
   .header
       .header-return.header-item
-        x-button(icon="map-marker" iconColor="#ffffff" label="voltar" mode="outline" to="/")
+        x-button(icon="arrow-left" iconColor="#ffffff" label="voltar" mode="outline" to="/")
       .header-title.header-item
         h1 {{ title }}
 </template>
