@@ -5,6 +5,7 @@ import router from "./router";
 import "./plugins/unicons.js";
 import "leaflet/dist/leaflet.css";
 import store from "./store";
+
 Vue.config.productionTip = false;
 
 new Vue({
