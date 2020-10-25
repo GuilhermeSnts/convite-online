@@ -17,7 +17,7 @@
 import { latLng, icon } from "leaflet";
 import { LMap, LTileLayer, LIcon, LMarker } from "vue2-leaflet";
 import markerIcon from "../assets/pin-location.gif";
-
+import { mapGetters } from "vuex";
 export default {
   name: "Map",
 
@@ -27,9 +27,7 @@ export default {
     },
 
     zoom: 13,
-    url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-    latitude: 47.41322,
-    longitude: -1.219482
+    url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
   }),
 
   computed: {
@@ -42,7 +40,11 @@ export default {
         iconSize: [62, 67],
         iconAnchor: [16, 37]
       });
-    }
+    },
+    ...mapGetters("map", {
+      latitude: "getLatitude",
+      longitude: "getLongitude"
+    })
   },
 
   components: {
