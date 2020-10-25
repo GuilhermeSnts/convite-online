@@ -1,6 +1,6 @@
 <template lang="pug">
   .map-button
-    XButton(icon="map-marker" iconColor="#C3C1D6" label="Lugar" mode="smooth" to="/map")
+    XButton(icon="map-marker" iconColor="#C3C1D6" label="Location" mode="smooth" to="/map")
 </template>
 
 <script>
