@@ -9,16 +9,16 @@
 
     .row
       MapButton
-      MapButton
+      CalendarButton
     
 </template>
 
 <script>
-// @ is an alias to /src
 import CoverImage from "@/components/CoverImage.vue";
 import TextBlock from "@/components/TextBlock.vue";
 import TitleBlock from "@/components/TitleBlock.vue";
 import MapButton from "@/components/MapButton.vue";
+import CalendarButton from "@/components/CalendarButton.vue";
 
 export default {
   name: "Home",
@@ -26,7 +26,8 @@ export default {
     CoverImage,
     TextBlock,
     TitleBlock,
-    MapButton
+    MapButton,
+    CalendarButton
   }
 };
 </script>
